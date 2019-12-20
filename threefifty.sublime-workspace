@@ -1,0 +1,1962 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"goal",
+				"goal_pos"
+			],
+			[
+				"too",
+				"toolbar_surf"
+			],
+			[
+				"ed",
+				"edge_collision_x"
+			],
+			[
+				"wind",
+				"windowHeight"
+			],
+			[
+				"con",
+				"contactTerm"
+			],
+			[
+				"max",
+				"max_team_members"
+			],
+			[
+				"Repo",
+				"ReportsListNoClassroomReports"
+			],
+			[
+				"Cap",
+				"CaptainLabel"
+			],
+			[
+				"Main",
+				"MainContactSection"
+			],
+			[
+				"ClassroomDeil",
+				"ClassroomDetailsFormComponent"
+			],
+			[
+				"Att",
+				"AttachOrganization"
+			],
+			[
+				"defaul",
+				"defaultProps"
+			],
+			[
+				"namedQ",
+				"namedQuery"
+			],
+			[
+				"admin_",
+				"admin_foo"
+			],
+			[
+				"cl_",
+				"cl_foo"
+			],
+			[
+				"Org",
+				"Organization"
+			],
+			[
+				"Or",
+				"Organization"
+			],
+			[
+				"Proram",
+				"ProgramSearchProps"
+			],
+			[
+				"search",
+				"searchActionCreator"
+			],
+			[
+				"exc",
+				"exception_type"
+			],
+			[
+				"mysql",
+				"mysql_connection"
+			],
+			[
+				"row_dic",
+				"row_dict_to_obj"
+			],
+			[
+				"affec",
+				"affected_rows"
+			],
+			[
+				"ret",
+				"retry_on_error"
+			],
+			[
+				"TeamRe",
+				"TeamsResponses"
+			],
+			[
+				"Res",
+				"ResponseIndexConflict"
+			],
+			[
+				"par",
+				"participation_base"
+			],
+			[
+				"member",
+				"member_first"
+			],
+			[
+				"mem",
+				"member_first"
+			],
+			[
+				"consent",
+				"consentText"
+			],
+			[
+				"checkbo",
+				"checkboxLabelText"
+			],
+			[
+				"check",
+				"checkboxLabelText"
+			],
+			[
+				"cycleLe",
+				"cycleLengthError"
+			],
+			[
+				"CYCL",
+				"CYCLE_DATES_LENGTH_THREE_WEEKS"
+			],
+			[
+				"CYCLE",
+				"CYCLE_DATES_LENGTH_TWO_WEEKS"
+			],
+			[
+				"ho",
+				"horizontal"
+			],
+			[
+				"B",
+				"BlockquoteStyled"
+			],
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"Mul",
+				"Multicolumn"
+			],
+			[
+				"ant",
+				"antwoneFisherJpg"
+			],
+			[
+				"CCP",
+				"CCPTeacherIntroduction"
+			],
+			[
+				"fetch",
+				"fetched_body"
+			],
+			[
+				"exi",
+				"existing"
+			],
+			[
+				"formV",
+				"formValues"
+			],
+			[
+				"formValue",
+				"formValuesToBody"
+			],
+			[
+				"response",
+				"responseBody"
+			],
+			[
+				"fas",
+				"fasToolsPdf"
+			],
+			[
+				"opti",
+				"optimalLearningEnvironmentPdf"
+			],
+			[
+				"FieldDateTimePicker",
+				"FieldDateTimePickerInput"
+			],
+			[
+				"captain",
+				"captainOnlyInvisible"
+			],
+			[
+				"cap",
+				"captainOnlyInvisible"
+			],
+			[
+				"TaskC",
+				"TaskCaptainOnlyStyled"
+			],
+			[
+				"Rub",
+				"RubricLevel"
+			],
+			[
+				"comp",
+				"components"
+			],
+			[
+				"orgids",
+				"organization_ids"
+			],
+			[
+				"mult",
+				"multi_code"
+			],
+			[
+				"getN",
+				"getNeptuneTeammateAccount"
+			],
+			[
+				"com",
+				"componentPath"
+			],
+			[
+				"Attach",
+				"AttachOrganizationForm"
+			],
+			[
+				"TIRC",
+				"TRITON_COOKIES_AUTH_TOKEN"
+			],
+			[
+				"TRICO",
+				"TRITON_COOKIES_AUTH_USER"
+			],
+			[
+				"contin",
+				"continueOnPage"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"is_",
+				"is_user_id"
+			],
+			[
+				"_org",
+				"_organizationsById"
+			],
+			[
+				"prg",
+				"programsFailure"
+			],
+			[
+				"routePro",
+				"routeProgram"
+			],
+			[
+				"query",
+				"queryOrganizations"
+			],
+			[
+				"ep",
+				"ep_program"
+			],
+			[
+				"org_ids",
+				"organization_ids"
+			],
+			[
+				"title",
+				"titleIcon"
+			],
+			[
+				"resp",
+				"response_dict"
+			],
+			[
+				"ex",
+				"existing"
+			],
+			[
+				"fetch_",
+				"fetched_by_id"
+			],
+			[
+				"origin",
+				"original_times"
+			],
+			[
+				"class",
+				"classroom_counts"
+			],
+			[
+				"start_d",
+				"start_datetime"
+			],
+			[
+				"clasIds",
+				"classroomIds"
+			],
+			[
+				"addP",
+				"addActionTypeToAction"
+			],
+			[
+				"curr",
+				"currentCycle"
+			],
+			[
+				"failur",
+				"failureTypeOf"
+			],
+			[
+				"put",
+				"putAndTakePayload"
+			],
+			[
+				"queyrPar",
+				"queryClassroomsWithParticipationFailure"
+			],
+			[
+				"cyc",
+				"cyclesActions"
+			],
+			[
+				"exis",
+				"existing_student_ids"
+			],
+			[
+				"existin",
+				"existing_participants"
+			],
+			[
+				"Setion",
+				"SectionItemDiv"
+			],
+			[
+				"Sec",
+				"SectionItemIcon"
+			],
+			[
+				"shouldD",
+				"shouldDisplayThirdPage"
+			],
+			[
+				"should",
+				"shouldDisplaySecondPage"
+			],
+			[
+				"repo",
+				"reports_to_release"
+			],
+			[
+				"aser",
+				"assertEqual"
+			],
+			[
+				"num",
+				"num_reports_released"
+			],
+			[
+				"Noti",
+				"Notification"
+			],
+			[
+				"noti",
+				"notify_for_report"
+			],
+			[
+				"create",
+				"create_notifications_for_reporting_unit"
+			],
+			[
+				"prev",
+				"previewReport"
+			],
+			[
+				"EP",
+				"EPPracticeJournal"
+			],
+			[
+				"meeting",
+				"meeting_datetime"
+			],
+			[
+				"jour",
+				"journal_statuses"
+			],
+			[
+				"journ",
+				"journal_due"
+			],
+			[
+				"VALID",
+				"VALIDATE_STUDENT_ID_LENGTH"
+			],
+			[
+				"getTem",
+				"getTeamFormValues"
+			],
+			[
+				"path",
+				"pathname"
+			],
+			[
+				"destory",
+				"destroyTeamForm"
+			],
+			[
+				"Team",
+				"TeamDetailsForm"
+			],
+			[
+				"TeamDetails",
+				"TeamDetailsFormComponent"
+			],
+			[
+				"complete",
+				"completeByTeamData"
+			],
+			[
+				"updateT",
+				"updateTaskData"
+			],
+			[
+				"field",
+				"fieldProps"
+			],
+			[
+				"clon",
+				"clonedTeam"
+			],
+			[
+				"valid",
+				"validate"
+			],
+			[
+				"super",
+				"supervisor_agreement"
+			],
+			[
+				"respon",
+				"responsibilities"
+			],
+			[
+				"toTeam",
+				"toTeamReports"
+			],
+			[
+				"captainOn",
+				"captainOnlyEditable"
+			],
+			[
+				"map",
+				"mapStateToProps"
+			],
+			[
+				"dis",
+				"displaySteps"
+			],
+			[
+				"disp",
+				"displaySteps"
+			],
+			[
+				"displ",
+				"displayStep"
+			],
+			[
+				"exp",
+				"expected"
+			],
+			[
+				"first",
+				"firstIncompleteStep"
+			],
+			[
+				"Step",
+				"StepMenuDisplay"
+			],
+			[
+				"prop",
+				"property_types"
+			],
+			[
+				"cycl",
+				"cycleSteps"
+			],
+			[
+				"cylc",
+				"cycleSteps"
+			],
+			[
+				"overrid",
+				"override_json_body"
+			],
+			[
+				"parent",
+				"parentId"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test/containers/CounterPage.spec.js",
+			"settings":
+			{
+				"buffer_size": 1833,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/components/Home.js",
+			"settings":
+			{
+				"buffer_size": 685,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Router.js",
+			"settings":
+			{
+				"buffer_size": 382,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Routes.js",
+			"settings":
+			{
+				"buffer_size": 127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".prettierrc.json",
+			"settings":
+			{
+				"buffer_size": 211,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "threefifty.sublime-project",
+			"settings":
+			{
+				"buffer_size": 237,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"syn:nao",
+				"Set Syntax: JavaScript (Naomi)"
+			],
+			[
+				"sot",
+				"Set Syntax: Objective-C++"
+			],
+			[
+				"syn:babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"syn:react",
+				"Set Syntax: TypeScriptReact"
+			],
+			[
+				"syn:jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"camel",
+				"Convert Case: camelCase"
+			],
+			[
+				"jsp",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"jspret-user",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"bookma",
+				"Bookmarks: Toggle"
+			],
+			[
+				"jspretier-user",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"mark",
+				"Bookmarks: Toggle"
+			],
+			[
+				"packagelist",
+				"Package Control: List Packages"
+			],
+			[
+				"isntal",
+				"Package Control: Install Package"
+			],
+			[
+				"packageinste",
+				"Package Control: Install Package"
+			],
+			[
+				"jsprett-user",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"jspreteruser",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"jsonform",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"jsonvali",
+				"Pretty JSON: Validate"
+			],
+			[
+				"jspre",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"filterincludst",
+				"Filter Lines: Include Lines With String"
+			],
+			[
+				"filter",
+				"Filter Lines: Include Lines With String"
+			],
+			[
+				"jspretuser",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"jspreuser",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"jsonfor",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"jsonvalid",
+				"Pretty JSON: Validate"
+			],
+			[
+				"packinstal",
+				"Package Control: Install Package"
+			],
+			[
+				"packremove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jspretter",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"listpack",
+				"Package Control: List Packages"
+			],
+			[
+				"jspr",
+				"JsPrettier: Format Code"
+			],
+			[
+				"doc",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"Snippet: ",
+				"Snippet: curly_round"
+			],
+			[
+				"table",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"gitblam",
+				"Git: Blame"
+			],
+			[
+				"git:hist",
+				"Git: Commit history"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"instacl",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prety",
+				"Pretty JSON: Validate"
+			],
+			[
+				"jspret",
+				"JsPrettier: Format Code"
+			],
+			[
+				"jspretset",
+				"Preferences: JsPrettier Settings - User"
+			],
+			[
+				"installpack",
+				"Package Control: Install Package"
+			],
+			[
+				"removepack",
+				"Package Control: Remove Package"
+			],
+			[
+				"isntallpack",
+				"Package Control: Install Package"
+			],
+			[
+				"syn:mark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"syn:mar",
+				"Set Syntax: Markdown (Github) (Naomi)"
+			],
+			[
+				"synmarkd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syn:ext",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"dashcase",
+				"Convert Case: dash-case"
+			],
+			[
+				"syn:naomi",
+				"Set Syntax: JavaScript (Naomi)"
+			],
+			[
+				"syn:sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"syn:javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn:py",
+				"Set Syntax: Python"
+			],
+			[
+				"Snippet: jin",
+				"Snippet: jinja_command"
+			],
+			[
+				"prefer",
+				"Preferences: Settings"
+			],
+			[
+				"syn:bab",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"jspert",
+				"JsPrettier: Format Code"
+			],
+			[
+				"reverse",
+				"Permute Lines: Reverse"
+			],
+			[
+				"syn:jav",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"snake",
+				"Convert Case: snake_case"
+			],
+			[
+				"pakcinstal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syn:markext",
+				"Set Syntax: Markdown Extended"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 185.0,
+		"history":
+		[
+			"'hello'.startswith('h')",
+			"s = set(1)",
+			"(5,) * 2",
+			"s.update([3,4])",
+			"s = set([1,2,3])",
+			"map.__doc__",
+			"reduce.__doc__",
+			"next([1,2,3])",
+			"int(None)",
+			"fileexists",
+			"params.difference([1,2])",
+			"params.difference(owned_teams)",
+			"owned_teams.difference(params)",
+			"params = {1,2,3,4}",
+			"owned_teams = {1,2,3}",
+			"[c.strip() for c in multi_code.split(',')]",
+			"multi_code = ' boo '",
+			"[c.strip() for c in multi_code.split(',')]",
+			"multi_code = ' boo foo bar hi, there   '",
+			"[c.strip() for c in multi_code.split(',')]",
+			"multi_code = 'hi, there'",
+			"set([1,2])",
+			"set(1, 2)",
+			"int(False)",
+			"int(True)",
+			"next(l)",
+			"l = [1,2,3]",
+			"sum(x for x in range(0, 3))",
+			"random.randrange(1, 4)",
+			"random.randrange.__doc__",
+			"dir(random)",
+			"import random",
+			"datetime.datetime.max.time()",
+			"datetime.datetime.combine(d, datetime.datetime.min.time())",
+			"datetime.datetime.combine(d, datetime.min.time())",
+			"datetime.combine(d, datetime.min.time())",
+			"d.datetime()",
+			"datetime.datetime(d)",
+			"d = datetime.date(2019, 1, 1)",
+			"d = Date(2019, 1, 1)",
+			"import datetime",
+			"l",
+			"l.append([2,3])",
+			"l = [1]",
+			"tuple(s)",
+			"s = {1, 1, 2, 2}",
+			"datetime.date.today().strftime",
+			"datetime.datetime.strptime",
+			"import datetime",
+			"time.sleep.__doc__",
+			"import time",
+			"'cool cat'.replace(' ', '-')",
+			"'HI'.lower()",
+			"'HI'.toLower()",
+			"'HI'.tolower()",
+			"a and a <= datetime.date.today()",
+			"a = datetime.date.today()",
+			"a and a <= datetime.date.today()",
+			"a = None",
+			"None <= datetime.date.today()",
+			"import datetime",
+			"None <= datetime.date.today()",
+			"from datetime import timedelta",
+			"team_id",
+			"team_Id",
+			"step_label",
+			"step_label, team_id = parent_id.split(':')",
+			"parent_id = 'foo:bar'",
+			"[x for x in range(1, 3)]",
+			"[x for x in range(1, 3)",
+			"range(1, 3)",
+			"ceil",
+			"floor",
+			"d.popitem.__doc__",
+			"d.popitme.__doc__",
+			"d.clear.__doc__",
+			"dir(d)",
+			"d[-'a']",
+			"d = {'a': 1, 'b': 2}"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/chris/Sites/threefifty"
+	],
+	"file_history":
+	[
+		"/Users/chris/Sites/threefifty/package.json",
+		"/Users/chris/Sites/threefifty/configs/webpack.config.base.js",
+		"/Users/chris/Sites/threefifty/babel.config.js",
+		"/Users/chris/Sites/threefifty/.eslintrc.js",
+		"/Users/chris/Sites/threefifty/app/Routes.js",
+		"/Users/chris/Sites/threefifty/threefifty.sublime-project",
+		"/Users/chris/Sites/threefifty/test/containers/CounterPage.spec.js",
+		"/Users/chris/Sites/threefifty/app/components/Home.js",
+		"/Users/chris/Sites/threefifty/app/routes.js",
+		"/Users/chris/Sites/threefifty/app/Router.js",
+		"/Users/chris/Sites/threefifty/app/containers/Root.js",
+		"/Users/chris/Sites/threefifty/app/constants/routes.json",
+		"/Users/chris/Sites/bots/Toolbar.py",
+		"/Users/chris/Sites/bots/geo.py",
+		"/Users/chris/Sites/bots/Player.py",
+		"/Users/chris/Sites/bots/teams.py",
+		"/Users/chris/Sites/bots/game.py",
+		"/Users/chris/Sites/bots/Bot.py",
+		"/Users/chris/Sites/triton/src/scenes/TeamNew/index.js",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsList/index.js",
+		"/Users/chris/Sites/triton/src/scenes/Reports/index.js",
+		"/Users/chris/Sites/triton/templates/notifications/digest_body_main-contact.html",
+		"/Users/chris/Sites/triton/app/model/program.py",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsList/ReportsListWeek.js",
+		"/Users/chris/Sites/triton/app/model/report.py",
+		"/Users/chris/Sites/triton/src/state/ui/selectors.loading.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomsList/ClassroomsListWrapper.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormComponent.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassTeamSection.js",
+		"/Users/chris/Sites/triton/src/state/selectors.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamClassrooms/index.js",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsEmpty.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomsList/ClassroomsListEmpty.js",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsList/ReportsListWeekItem.js",
+		"/Users/chris/Sites/triton/src/components/ApplicationSidebar/SidebarTeams.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/index.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormContainer.js",
+		"/Users/chris/Sites/triton/src/components/Form/FormActions/index.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/ClassroomDetailsForm/InstructionsSection.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/ClassroomDetailsForm/validate.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomsList/index.js",
+		"/Users/chris/Sites/triton/docs/db/config_terms.sql",
+		"/Users/chris/Sites/triton/src/components/Loading/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamUserInvite/TeamUserInviteLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamOrganizations/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TaskModule/TaskModuleWrapper.js",
+		"/Users/chris/Sites/triton/src/scenes/RosterAdd/RosterAddLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationUserInvite/OrganizationUserInviteLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationsList/OrganizationsListLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationDetails/index.js",
+		"/Users/chris/Sites/triton/src/programs/ProgramData/ProgramDataLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/UserWelcomeModal/UserWelcomeForm.js",
+		"/Users/chris/Sites/triton/src/scenes/UserDetails/UserDetailsLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamOrganizations/TeamOrganizationsList/index.js",
+		"/Users/chris/Sites/triton/src/scenes/Survey/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamUsers/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamsList/index.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationClassrooms/index.js",
+		"/Users/chris/Sites/triton/src/scenes/Home/index.js",
+		"/Users/chris/Sites/triton/src/scenes/UserDetails/UserDetailsRender.tsx",
+		"/Users/chris/Sites/triton/src/scenes/SurveyInstructions/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamSettings/index.js",
+		"/Users/chris/Sites/triton/app/cron_handlers.py",
+		"/Users/chris/Sites/triton/src/scenes/ReportsSettings/index.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationUsers/index.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationUsers/OrganizationUsersLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomsList/ClassroomsListLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomRoster/ClassroomRosterLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomNew/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamUsers/TeamUsersLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamsList/TeamsListLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationClassrooms/OrganizationClassroomsLoading.js",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsWrapper.js",
+		"/Users/chris/Sites/triton/src/scenes/AttachOrganization/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamDetails/index.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamDetails/TeamDeleteForm.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamUsers/TeamUsersWrapper.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamFormBase/UserMenu.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamOrganizations/TeamOrganizationsList/OrganizationMenu.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamUsers/TeamUsersRender.js",
+		"/Users/chris/Sites/triton/src/scenes/AttachOrganization/AttachOrganizationForm.js",
+		"/Users/chris/Sites/triton/app/task_handlers.py",
+		"/Users/chris/Sites/triton/src/services/triton/programs.ts",
+		"/Users/chris/Sites/triton/app/model/digest.py",
+		"/Users/chris/Sites/triton/app/model/notification.py",
+		"/Users/chris/Sites/triton/app/api_handlers.py",
+		"/Users/chris/Sites/triton/src/scenes/TeamsList/TeamsListRender.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamsList/TeamsListWrapper.js",
+		"/Users/chris/Sites/triton/templates/notifications/digest_item_main-contact.html",
+		"/Users/chris/Sites/triton/docs/1152_slow_query_logging.md",
+		"/Users/chris/Sites/triton/unit_testing/test_notifications.py",
+		"/Users/chris/Sites/triton/src/scenes/Reports/ReportsList/index.test.js",
+		"/Users/chris/Sites/triton/src/scenes/ClassroomDetails/ClassroomDetailsForm/MainContactSection.js",
+		"/Users/chris/Sites/triton/src/scenes/TeamUsers/TeamUsersLeave.js",
+		"/Users/chris/Sites/triton/src/programs/ccp.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationUsers/User.js",
+		"/Users/chris/Sites/triton/src/utils/createSelectors.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationTeams/index.js",
+		"/Users/chris/Sites/triton/src/components/ApplicationSidebar/SidebarHome.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationInstructions/index.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationCode/index.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationDetails/OrganizationDetailsForm.js",
+		"/Users/chris/Sites/triton/src/programs/ep.js",
+		"/Users/chris/Library/Application Support/Sublime Text 3/Packages/User/JsPrettier.sublime-settings",
+		"/Users/chris/Sites/triton/src/state/teams/sagas.js",
+		"/Users/chris/Sites/triton/src/state/programs/sagas.js",
+		"/Users/chris/Sites/triton/src/components/ApplicationSidebar/SidebarTeamsCaptain.js",
+		"/Users/chris/Sites/triton/src/state/classrooms/sagas.js",
+		"/Users/chris/Sites/triton/src/programs/Task/TaskSummary/index.js",
+		"/Users/chris/Sites/triton/src/programs/Task/index.js",
+		"/Users/chris/Sites/triton/src/programs/Task/TaskTasklist/TaskCaptainOnly.js",
+		"/Users/chris/Sites/triton/src/components/Form/ButtonToggleField/index.js",
+		"/Users/chris/Sites/triton/src/state/organizations/actions.js",
+		"/Users/chris/Sites/triton/src/state/organizations/sagas.js",
+		"/Users/chris/Sites/triton/src/programs/Task/TaskTasklist/TaskIconComplete.js",
+		"/Users/chris/Sites/triton/app/model/response.py",
+		"/Users/chris/Desktop/backup_password.md",
+		"/Users/chris/Downloads/passwords.txt",
+		"/Users/chris/Sites/triton/src/programs/ProgramData/ProgramDataRender.js",
+		"/Users/chris/Sites/triton/src/scenes/OrganizationDashboard/index.js",
+		"/Users/chris/Sites/triton/src/services/triton/config.js",
+		"/Users/chris/Sites/triton/cypress/integration/userForms.js",
+		"/Users/chris/Sites/triton/src/mocks/index.js",
+		"/Users/chris/Sites/triton/src/mocks/cypress.js",
+		"/Users/chris/Sites/triton/src/services/triton/helpers/handleApiResponse.js",
+		"/Users/chris/Sites/triton/src/state/form/emailSelected/sagas.js",
+		"/Users/chris/Sites/triton/src/scenes/ProgramSearch/index.js"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 266.0,
+		"where_history":
+		[
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"eslint-plugin-import",
+			"plugin",
+			"eslint",
+			"plugins",
+			"eslint",
+			"import",
+			"plugins",
+			"plugin",
+			"import",
+			"CounterPage",
+			"constants",
+			"Routes",
+			"import.*Routes",
+			"</li>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test/containers/CounterPage.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Naomi/syntaxes/naomi.fjsx15.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/components/Home.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 685,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								638,
+								638
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Naomi/syntaxes/naomi.fjsx15.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 2,
+								"tabSize": 2
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 347.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/Router.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 382,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Naomi/syntaxes/naomi.fjsx15.sublime-syntax",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/Routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								51,
+								51
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Naomi/syntaxes/naomi.fjsx15.sublime-syntax",
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": ".prettierrc.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "threefifty.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "threefifty.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"eslintrc",
+				".eslintrc.js"
+			],
+			[
+				"packag",
+				"package.json"
+			],
+			[
+				"prettierrc",
+				".prettierrc.json"
+			],
+			[
+				"routes.js",
+				"app/Routes.js"
+			],
+			[
+				"Router.js",
+				"app/Router.js"
+			],
+			[
+				"comphome",
+				"app/components/Home.js"
+			],
+			[
+				"tool",
+				"Toolbar.py"
+			],
+			[
+				"bot",
+				"Bot.py"
+			],
+			[
+				"game",
+				"game.py"
+			],
+			[
+				"geo",
+				"geo.py"
+			],
+			[
+				"player",
+				"Player.py"
+			],
+			[
+				"game.",
+				"game.py"
+			],
+			[
+				"digestbodymain",
+				"templates/notifications/digest_body_main-contact.html"
+			],
+			[
+				"sceneteamclas",
+				"src/scenes/TeamClassrooms/index.js"
+			],
+			[
+				"selectorsloading",
+				"src/state/ui/selectors.loading.js"
+			],
+			[
+				"selectors",
+				"src/state/selectors.js"
+			],
+			[
+				"reportlistweek",
+				"src/scenes/Reports/ReportsList/ReportsListWeek.js"
+			],
+			[
+				"reportlistitem",
+				"src/scenes/Reports/ReportsList/ReportsListWeekItem.js"
+			],
+			[
+				"formformactions",
+				"src/components/Form/FormActions/index.js"
+			],
+			[
+				"instructionssec",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/InstructionsSection.js"
+			],
+			[
+				"sidebarteam",
+				"src/components/ApplicationSidebar/SidebarTeams.js"
+			],
+			[
+				"classdetailform",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormComponent.js"
+			],
+			[
+				"classroomdetailindex",
+				"src/scenes/ClassroomDetails/index.js"
+			],
+			[
+				"scenetemclas",
+				"src/scenes/TeamClassrooms/index.js"
+			],
+			[
+				"classroomslist",
+				"src/scenes/ClassroomsList/ClassroomsListWrapper.js"
+			],
+			[
+				"componentsLoading",
+				"src/components/Loading/index.js"
+			],
+			[
+				"program.py",
+				"app/model/program.py"
+			],
+			[
+				"termsql",
+				"docs/db/config_terms.sql"
+			],
+			[
+				"userdetail",
+				"src/scenes/UserDetails/UserDetailsRender.tsx"
+			],
+			[
+				"report.py",
+				"app/model/report.py"
+			],
+			[
+				"classdetail",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormComponent.js"
+			],
+			[
+				"classlist",
+				"src/scenes/ClassroomsList/ClassroomsListWrapper.js"
+			],
+			[
+				"form/formaction",
+				"src/components/Form/FormActions/index.js"
+			],
+			[
+				"teamdeletform",
+				"src/scenes/TeamDetails/TeamDeleteForm.js"
+			],
+			[
+				"teamdetail",
+				"src/scenes/TeamDetails/index.js"
+			],
+			[
+				"reportsettings",
+				"src/scenes/ReportsSettings/index.js"
+			],
+			[
+				"attach",
+				"src/scenes/AttachOrganization/AttachOrganizationForm.js"
+			],
+			[
+				"teamusers",
+				"src/scenes/TeamUsers/TeamUsersWrapper.js"
+			],
+			[
+				"teamsettings",
+				"src/scenes/TeamSettings/index.js"
+			],
+			[
+				"scene/teamdetail",
+				"src/scenes/TeamDetails/index.js"
+			],
+			[
+				"teamslistwrapper",
+				"src/scenes/TeamsList/TeamsListWrapper.js"
+			],
+			[
+				"teamslist",
+				"src/scenes/TeamsList/TeamsListRender.js"
+			],
+			[
+				"scene/Home",
+				"src/scenes/Home/index.js"
+			],
+			[
+				"program.ts",
+				"src/services/triton/programs.ts"
+			],
+			[
+				"cronhan",
+				"app/cron_handlers.py"
+			],
+			[
+				"docs",
+				"docs/db/1171_survey_paging.sql"
+			],
+			[
+				"docs/",
+				"docs/1152_slow_query_logging.md"
+			],
+			[
+				"testnotif",
+				"unit_testing/test_notifications.py"
+			],
+			[
+				"digest.py",
+				"app/model/digest.py"
+			],
+			[
+				"tritonprogram",
+				"src/services/triton/programs.ts"
+			],
+			[
+				"reportlistwek",
+				"src/scenes/Reports/ReportsList/ReportsListWeek.js"
+			],
+			[
+				"classdetailformcomp",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormComponent.js"
+			],
+			[
+				"classroomdetail",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormContainer.js"
+			],
+			[
+				"teamuserswrap",
+				"src/scenes/TeamUsers/TeamUsersWrapper.js"
+			],
+			[
+				"teamusersleave",
+				"src/scenes/TeamUsers/TeamUsersLeave.js"
+			],
+			[
+				"classdetilformcont",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormContainer.js"
+			],
+			[
+				"createsele",
+				"src/utils/createSelectors.js"
+			],
+			[
+				"teamslistrender",
+				"src/scenes/TeamsList/TeamsListRender.js"
+			],
+			[
+				"orgdetailform",
+				"src/scenes/OrganizationDetails/OrganizationDetailsForm.js"
+			],
+			[
+				"orgdetail",
+				"src/scenes/OrganizationDetails/index.js"
+			],
+			[
+				"scenehome",
+				"src/scenes/Home/index.js"
+			],
+			[
+				"classroomsaga",
+				"src/state/classrooms/sagas.js"
+			],
+			[
+				"teamssaga",
+				"src/state/teams/sagas.js"
+			],
+			[
+				"programsaga",
+				"src/state/programs/sagas.js"
+			],
+			[
+				"classromdetailformcon",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormContainer.js"
+			],
+			[
+				"ClassroomDe",
+				"src/scenes/ClassroomDetails/ClassroomDetailsForm/ClassroomDetailsFormComponent.js"
+			],
+			[
+				"sidebarteamcap",
+				"src/components/ApplicationSidebar/SidebarTeamsCaptain.js"
+			],
+			[
+				"select",
+				"src/state/selectors.js"
+			],
+			[
+				"ep.js",
+				"src/programs/ep.js"
+			],
+			[
+				"organactions",
+				"src/state/organizations/actions.js"
+			],
+			[
+				"modelrepsonse.py",
+				"app/model/response.py"
+			],
+			[
+				"programdata",
+				"src/programs/ProgramData/ProgramDataRender.js"
+			],
+			[
+				"orgdashboa",
+				"src/scenes/OrganizationDashboard/index.js"
+			],
+			[
+				"stepsumm",
+				"src/programs/Step/StepSummary.js"
+			],
+			[
+				"programsummar",
+				"src/programs/Program/ProgramSummary.js"
+			],
+			[
+				"programsuma",
+				"src/programs/Program/ProgramSummary.js"
+			],
+			[
+				"summary",
+				"src/programs/Step/StepSummary.js"
+			],
+			[
+				"team.py",
+				"app/model/team.py"
+			],
+			[
+				"phrase",
+				"gae_server/code_phrase.py"
+			],
+			[
+				"ccp.js",
+				"src/programs/ccp.js"
+			],
+			[
+				"codedepl",
+				"codeship_deploy.sh"
+			],
+			[
+				"user.py",
+				"app/model/user.py"
+			],
+			[
+				"sqlmodel",
+				"gae_server/gae_models/sql_model.py"
+			],
+			[
+				"searchfield",
+				"src/components/ProgramSearchField/index.tsx"
+			],
+			[
+				"programsearchindex",
+				"src/scenes/ProgramSearch/index.js"
+			],
+			[
+				"emailSelecsaga",
+				"src/state/form/emailSelected/sagas.js"
+			],
+			[
+				"handl",
+				"src/services/triton/helpers/handleApiResponse.js"
+			],
+			[
+				"service/index",
+				"src/services/index.ts"
+			],
+			[
+				"handleapi",
+				"src/services/triton/helpers/handleApiResponse.js"
+			],
+			[
+				"fetchapi",
+				"src/services/triton/helpers/fetchApi.js"
+			],
+			[
+				"servictritonconfig",
+				"src/services/triton/config.js"
+			],
+			[
+				"mocks/cypress",
+				"src/mocks/cypress.js"
+			],
+			[
+				"mocks/index",
+				"src/mocks/index.js"
+			],
+			[
+				"mocks",
+				"src/mocks/index.js"
+			],
+			[
+				"cypresintegrauser",
+				"cypress/integration/userForms.js"
+			],
+			[
+				"newsel.test",
+				"src/state/newSelectors.test.js"
+			],
+			[
+				"authselec",
+				"src/state/auth/selectors.js"
+			],
+			[
+				"newselec",
+				"src/state/newSelectors.js"
+			],
+			[
+				"state/selectors.test",
+				"src/state/selectors.test.js"
+			],
+			[
+				"userssaga",
+				"src/state/users/sagas.js"
+			],
+			[
+				"userssagatest",
+				"src/state/users/sagas.test.js"
+			],
+			[
+				"news",
+				"src/state/newSelectors.js"
+			],
+			[
+				"cycle/selectest",
+				"src/state/cycles/selectors.test.js"
+			],
+			[
+				"sceneprogramsearch",
+				"src/scenes/ProgramSearch/index.js"
+			],
+			[
+				"mockstoretest",
+				"src/state/mockStore.test.js"
+			],
+			[
+				"formsuer",
+				"src/utils/formSubmissionError.js"
+			],
+			[
+				"teamsetting",
+				"src/scenes/TeamSettings/index.js"
+			],
+			[
+				"entiti",
+				"src/state/helpers/entitiesReducer.js"
+			],
+			[
+				"teamnew",
+				"src/scenes/TeamNew/index.js"
+			],
+			[
+				"attachorgform",
+				"src/scenes/AttachOrganization/AttachOrganizationForm.js"
+			],
+			[
+				"sele.js",
+				"src/state/selectors.js"
+			],
+			[
+				"usersactions",
+				"src/state/users/actions.js"
+			],
+			[
+				"classsaga",
+				"src/state/classrooms/sagas.js"
+			],
+			[
+				"classaction",
+				"src/state/classrooms/actions.js"
+			],
+			[
+				"classroomaction",
+				"src/state/classrooms/actions.js"
+			],
+			[
+				"sceneclassroomdetail",
+				"src/scenes/ClassroomDetails/index.js"
+			],
+			[
+				"attachorg",
+				"src/scenes/AttachOrganization/index.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"cypresintegratred",
+				"cypress/integration/redirections.js"
+			],
+			[
+				"routes",
+				"src/routes/index.js"
+			],
+			[
+				"cycle.py",
+				"app/model/cycle.py"
+			],
+			[
+				"buttonindex",
+				"src/components/Button/index.js"
+			],
+			[
+				"buttoncot",
+				"src/components/Button/ButtonContainer.js"
+			],
+			[
+				"componbutton",
+				"src/components/Button/index.js"
+			],
+			[
+				"sort",
+				"src/scenes/ProgramSearch/SearchRowOrganization.tsx"
+			],
+			[
+				"programsearchform",
+				"src/scenes/ProgramSearch/ProgramSearchForm.js"
+			],
+			[
+				"compmodalindex",
+				"src/components/Modal/index.js"
+			],
+			[
+				"formsubmitsu",
+				"src/components/Form/FormSubmitSucceeded/index.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"nep",
+				"~/Sites/neptune/neptune.sublime-project"
+			],
+			[
+				"bele",
+				"~/Sites/bele-library/bele-library.sublime-project"
+			],
+			[
+				"analy",
+				"~/Sites/analysis/analysis.sublime-project"
+			],
+			[
+				"yello",
+				"~/Sites/yellowstone/yellowstone.sublime-project"
+			],
+			[
+				"yosemite",
+				"~/Sites/yosemite/yosemite.sublime-project"
+			],
+			[
+				"nept",
+				"~/Sites/neptune/neptune.sublime-project"
+			],
+			[
+				"yose",
+				"~/Sites/yosemite/yosemite.sublime-project"
+			],
+			[
+				"yoss",
+				"~/Sites/yosemite/yosemite.sublime-project"
+			],
+			[
+				"yell",
+				"~/Sites/yellowstone/yellowstone.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
