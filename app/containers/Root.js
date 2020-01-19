@@ -1,10 +1,10 @@
 // @flow
 import React from 'react';
-import { Provider } from 'react-redux';
+import Router from '../Router';
+import type { Store } from '../reducers/types';
 import { ConnectedRouter } from 'connected-react-router';
 import { hot } from 'react-hot-loader/root';
-import type { Store } from '../reducers/types';
-import Routes from '../Routes';
+import { Provider } from 'react-redux';
 
 type Props = {
   store: Store,
@@ -14,7 +14,7 @@ type Props = {
 const Root = ({ store, history }: Props) => (
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Routes />
+      <Router />
     </ConnectedRouter>
   </Provider>
 );
