@@ -1,33 +1,15 @@
 import React from 'react';
-import xlsx from 'xlsx';
 
 import ValidationError from '../utils/ValidationError';
-
-const sheetByIndex = (workbook, i) => {
-  const sheetName = workbook.SheetNames[i];
-  return workbook.Sheets[sheetName];
-};
-
-const openSingleFile = async () => {
-  const {
-    remote: { dialog },
-  } = require('electron');
-  const result = await dialog.showOpenDialog({ properties: ['openFile'] });
-  return result.filePaths[0];
-};
-
-const readJsonFromFile = (path, sheetIndex) => {
-  const workbook = xlsx.readFile(path);
-  const sheet = sheetByIndex(workbook, sheetIndex);
-  return xlsx.utils.sheet_to_json(sheet);
-};
+import openSingleFilePath from '../utils/openSingleFilePath';
+import readJsonFromFile from '../utils/readJsonFromFile';
 
 class EnterIdsFile extends React.Component {
   openAndInsert = async () => {
     const { onSubmit, onValidationError } = this.props;
 
     try {
-      const path = await openSingleFile();
+      const path = await openSingleFilePath();
       onSubmit(readJsonFromFile(path, 0)); // assumes first sheet
     } catch (e) {
       if (e instanceof ValidationError) {

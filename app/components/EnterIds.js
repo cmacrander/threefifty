@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 import routes from '../routes';
 import EnterIdsFile from './EnterIdsFile';
 import EnterIdsPaste from './EnterIdsPaste';
+import EnterIdSingle from './EnterIdSingle';
 import ErrorBoundary from './ErrorBoundary';
+import db from '../services/db';
 import jsonDataToRecords from '../utils/jsonDataToRecords';
 import ValidationError from '../utils/ValidationError';
 import {
@@ -16,49 +18,8 @@ import {
 
 import { Tabs, TabTitle, TabContent } from './Tabs';
 
-const {
-  remote: { app },
-} = require('electron');
-
-// const getColumns = sheet => {
-//   const cellAddressPattern = /^([A-Z]+)([0-9]+)$/;
-//   const cols = new Set();
-//   for (const cellAddress of Object.keys(sheet)) {
-//     if (cellAddressPattern.test(cellAddress)) {
-//       const [, col] = cellAddressPattern.exec(cellAddress);
-//       cols.add(col);
-//     }
-//   }
-//   return Array.from(cols);
-// };
-
-// const getTableColumnNames = sheet => {
-//   const letters = getColumns(sheet);
-//   const cols = letters.map(l => {
-//     const address = `${l}1`;
-//     return sheet[address];
-//   });
-//   return letters.map(l => sheet[`${l}1`].v);
-// };
-
 const writeRecords = async records => {
-  const fs = require('fs');
-  const path = require('path');
-  const util = require('util');
-
-  const readFile = util.promisify(fs.readFile);
-  const writeFile = util.promisify(fs.writeFile);
-
-  const dbPath = path.join(app.getPath('userData'), 'actionID.json');
-  let dbData;
-  try {
-    const dbJson = await readFile(dbPath);
-    dbData = JSON.parse(dbJson);
-  } catch (error) {
-    // db didn't exist, creating...
-    dbData = {};
-    await writeFile(dbPath, JSON.stringify(dbData));
-  }
+  const dbData = await db.getAll();
 
   const inserted = [];
   const updated = [];
@@ -72,11 +33,15 @@ const writeRecords = async records => {
       inserted.push(r);
     }
 
+    // @todo: index both by email and action id, right now we can have multiple
+    // emails with the same action id
+
     dbData[key] = r;
   }
-  await writeFile(dbPath, JSON.stringify(dbData, null, '  '));
+  await db.writeAll(dbData);
+  const numRecordsTotal = await db.count();
 
-  return { inserted, updated };
+  return { inserted, updated, numRecordsTotal };
 };
 
 type Props = {};
@@ -86,19 +51,27 @@ export default class EnterIds extends React.Component<Props> {
 
   constructor(props) {
     super(props);
+
     this.state = {
       numRecordsInserted: undefined,
+      numRecordsTotal: 0,
       numRecordsUpdated: undefined,
       warnings: [],
     };
   }
 
+  async componentDidMount() {
+    const numRecordsTotal = await db.count();
+    this.setState({ numRecordsTotal });
+  }
+
   insertJsonData = async jsonData => {
     const records = jsonDataToRecords(jsonData);
-    const { inserted, updated } = await writeRecords(records);
+    const { inserted, updated, numRecordsTotal } = await writeRecords(records);
     this.setState({
       numRecordsInserted: inserted.length,
       numRecordsUpdated: updated.length,
+      numRecordsTotal,
     });
   };
 
@@ -113,6 +86,10 @@ export default class EnterIds extends React.Component<Props> {
     return (
       <div data-tid="container">
         <h2>Enter Ids</h2>
+        <p>Current database contains 0 records.</p>
+        <p>
+          <button onClick={() => {}}>Clear database</button>
+        </p>
         <Tabs>
           <TabContent title={<>Upload spreadsheet</>}>
             <EnterIdsFile
@@ -127,7 +104,10 @@ export default class EnterIds extends React.Component<Props> {
             />
           </TabContent>
           <TabContent title={<>Enter individual</>}>
-            <p>enter individuals</p>
+            <EnterIdSingle
+              onSubmit={this.insertJsonData}
+              onValidationError={this.onValidationError}
+            />
           </TabContent>
         </Tabs>
         {numRecordsInserted !== undefined && (
