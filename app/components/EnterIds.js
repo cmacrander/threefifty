@@ -38,8 +38,10 @@ const writeRecords = async records => {
 
     dbData[key] = r;
   }
+  console.log('dbData', dbData);
   await db.writeAll(dbData);
   const numRecordsTotal = await db.count();
+  console.log('numRecordsTotal', numRecordsTotal);
 
   return { inserted, updated, numRecordsTotal };
 };
@@ -61,9 +63,30 @@ export default class EnterIds extends React.Component<Props> {
   }
 
   async componentDidMount() {
+    console.log('cdm');
     const numRecordsTotal = await db.count();
+    console.log('numRecordsTotal', numRecordsTotal);
     this.setState({ numRecordsTotal });
   }
+
+  clearDatabase = async () => {
+    const { numRecordsTotal } = this.state;
+    const msg =
+      `Are you sure you want to delete all ${numRecordsTotal} records in the ` +
+      `database?`;
+    if (confirm(msg)) {
+      await db.clear();
+      this.setState({ numRecordsTotal: 0 });
+      this.clearMessages();
+    }
+  };
+
+  clearMessages = () =>
+    this.setState({
+      numRecordsInserted: undefined,
+      numRecordsUpdated: undefined,
+      warnings: [],
+    });
 
   insertJsonData = async jsonData => {
     const records = jsonDataToRecords(jsonData);
@@ -82,15 +105,20 @@ export default class EnterIds extends React.Component<Props> {
   };
 
   render() {
-    const { numRecordsInserted, numRecordsUpdated, warnings } = this.state;
+    const {
+      numRecordsInserted,
+      numRecordsTotal,
+      numRecordsUpdated,
+      warnings,
+    } = this.state;
     return (
       <div data-tid="container">
         <h2>Enter Ids</h2>
-        <p>Current database contains 0 records.</p>
+        <p>Current database contains {numRecordsTotal} records.</p>
         <p>
-          <button onClick={() => {}}>Clear database</button>
+          <button onClick={this.clearDatabase}>Clear database</button>
         </p>
-        <Tabs>
+        <Tabs onChange={this.clearMessages}>
           <TabContent title={<>Upload spreadsheet</>}>
             <EnterIdsFile
               onSubmit={this.insertJsonData}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import noop from 'lodash/noop';
 import styled, { css } from 'styled-components';
 
-export const Tabs = ({ children }) => {
+export const Tabs = ({ children, onChange = noop }) => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   return (
@@ -11,7 +12,10 @@ export const Tabs = ({ children }) => {
           return (
             <TabTitle
               active={tabIndex === activeTabIndex}
-              onClick={() => setActiveTabIndex(tabIndex)}
+              onClick={event => {
+                setActiveTabIndex(tabIndex);
+                onChange(event);
+              }}
             >
               {child.props.title}
             </TabTitle>

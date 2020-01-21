@@ -1,6 +1,10 @@
 import values from 'lodash/values';
 
 const db = {
+  async clear() {
+    return this.writeAll({});
+  },
+
   async count() {
     const dbData = await this.getAll();
     return Object.keys(dbData).length;
@@ -44,6 +48,7 @@ const db = {
     const util = require('util');
     const writeFile = util.promisify(fs.writeFile);
 
+    console.log('writeAll()', JSON.stringify(dbData, null, '  '));
     return writeFile(this.getPath(), JSON.stringify(dbData, null, '  '));
   },
 };
