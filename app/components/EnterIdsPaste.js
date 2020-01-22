@@ -1,7 +1,14 @@
 import React from 'react';
 import csvtojson from 'csvtojson';
+import styled from 'styled-components';
 
+import Button from './Button';
 import ValidationError from '../utils/ValidationError';
+
+const TextAreaStyled = styled.textarea`
+  width: 75vw;
+  height: 25vh;
+`;
 
 class EnterIdsPaste extends React.Component {
   constructor(props) {
@@ -37,8 +44,10 @@ class EnterIdsPaste extends React.Component {
           Include column names when pasting. They may be either "email", "action
           ID", or both. Capitalization doesn't matter.
         </p>
-        <textarea value={this.state.value} onChange={this.handleChange} />
-        <button type="submit">Submit</button>
+        <TextAreaStyled value={this.state.value} onChange={this.handleChange} />
+        <p>
+          <Button type="submit">Submit</Button>
+        </p>
       </form>
     );
   }

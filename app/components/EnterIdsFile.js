@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from './Button';
 import ValidationError from '../utils/ValidationError';
 import openSingleFilePath from '../utils/openSingleFilePath';
 import readJsonFromFile from '../utils/readJsonFromFile';
@@ -27,7 +28,7 @@ class EnterIdsFile extends React.Component {
           The first sheet of the file should have a column called "email", or a
           column called "action ID", or both. Capitalization doesn't matter.
         </p>
-        <button onClick={this.openAndInsert}>Open File</button>
+        <Button onClick={this.openAndInsert}>Open File</Button>
       </>
     );
   }

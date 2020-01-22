@@ -2,11 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Button from './Button';
 import routes from '../routes';
 import EnterIdsFile from './EnterIdsFile';
 import EnterIdsPaste from './EnterIdsPaste';
 import EnterIdSingle from './EnterIdSingle';
-import ErrorBoundary from './ErrorBoundary';
 import db from '../services/db';
 import jsonDataToRecords from '../utils/jsonDataToRecords';
 import ValidationError from '../utils/ValidationError';
@@ -113,10 +113,10 @@ export default class EnterIds extends React.Component<Props> {
     } = this.state;
     return (
       <div data-tid="container">
-        <h2>Enter Ids</h2>
+        <h1>Enter Ids</h1>
         <p>Current database contains {numRecordsTotal} records.</p>
         <p>
-          <button onClick={this.clearDatabase}>Clear database</button>
+          <Button onClick={this.clearDatabase}>Clear database</Button>
         </p>
         <Tabs onChange={this.clearMessages}>
           <TabContent title={<>Upload spreadsheet</>}>

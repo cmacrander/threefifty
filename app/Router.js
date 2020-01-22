@@ -1,15 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
+
 import AddToFile from './containers/AddToFile';
 import App from './containers/App';
 import EnterIds from './containers/EnterIds';
 import HomePage from './containers/HomePage';
 import routes from './routes';
-import { Link } from 'react-router-dom';
-import { Switch, Route } from 'react-router';
+
+const NavBar = styled.div`
+  padding: 5px 10px;
+`;
 
 export default () => (
   <App>
-    <div><Link to={routes.toHome()}>Home</Link></div>
+    <NavBar>
+      <Link to={routes.toHome()}>Home</Link>
+    </NavBar>
     <Switch>
       <Route path={routes.toHome()} component={HomePage} exact />
       <Route path={routes.toEnterIds()} component={EnterIds} />

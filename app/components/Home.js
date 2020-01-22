@@ -11,7 +11,7 @@ export default class Home extends Component<Props> {
   render() {
     return (
       <div data-tid="container">
-        <h2>350 Seattle Utilities</h2>
+        <h1>350 Seattle Utilities</h1>
         <ul>
           <li>
             <Link to={routes.toEnterIds()}>Enter Action IDs</Link>

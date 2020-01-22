@@ -4,10 +4,15 @@
  */
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   position: relative;
   color: #444;
   height: 100vh;
+  margin: 0;
   padding: 8px;
   /*background-color: #232c39;*/
   background-color: rgb(250, 252, 240);
@@ -25,6 +30,10 @@ body {
   );
   font-family: Arial, Helvetica, Helvetica Neue, serif;
   overflow-y: hidden;
+}
+
+#root {
+  height: 100%;
 }
 
 h2 {

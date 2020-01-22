@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import xlsx from 'xlsx';
 import { Link } from 'react-router-dom';
 
+import Button from './Button';
+import Input from './Input';
 import db from '../services/db';
 import getMatchingColumnNames from '../utils/getMatchingColumnNames';
 import openSingleFilePath from '../utils/openSingleFilePath';
@@ -39,7 +41,7 @@ export default class AddToFile extends Component<Props> {
     const cols = Object.keys(jsonData[0]);
     const { emailColumnName, idColumnName } = getMatchingColumnNames(cols);
 
-    if (!idColumnName && !emailColumnName) {
+    if (idColumnName && emailColumnName) {
       this.setState({
         warnings: ['Found both email and action ID column.'],
       });
@@ -57,6 +59,11 @@ export default class AddToFile extends Component<Props> {
       dataSourceField = emailColumnName;
       dbSourceField = EMAIL_COLUMN_NAME;
       dbTargetField = ACTION_ID_COLUMN_NAME;
+    } else if (!idColumnName && !emailColumnName) {
+      this.setState({
+        warnings: ['Found neither email nor action ID column.'],
+      });
+      return;
     }
     const { inserted, jsonData: newJsonData } = await this.addData(
       jsonData,
@@ -121,7 +128,7 @@ export default class AddToFile extends Component<Props> {
     const { selectedFilePath, success, warnings } = this.state;
     return (
       <div data-tid="container">
-        <h2>Add To File</h2>
+        <h1>Add To File</h1>
         <p>
           Open a spreadsheet workbook, and this tool will attempt to add a
           column of either emails or action IDs to the data on the first sheet,
@@ -129,11 +136,18 @@ export default class AddToFile extends Component<Props> {
           new sheet.
         </p>
         <p>
-          Selected file: <input type="text" readOnly value={selectedFilePath} />
-          <button onClick={this.handleClickOpen}>Open</button>
+          Selected file:{' '}
+          <Input
+            type="text"
+            readOnly
+            value={selectedFilePath}
+            style={{ width: '50vw' }}
+            onClick={this.handleClickOpen}
+          />
+          <Button onClick={this.handleClickOpen}>Open</Button>
         </p>
         <p>
-          <button onClick={this.handleAddData}>Add data to workbook</button>
+          <Button onClick={this.handleAddData}>Add data to workbook</Button>
         </p>
         {success && <p>{success}</p>}
         {warnings.length > 0 && (

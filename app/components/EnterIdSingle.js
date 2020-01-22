@@ -1,6 +1,9 @@
 import React from 'react';
 import csvtojson from 'csvtojson';
+import styled from 'styled-components';
 
+import Button from './Button';
+import Input from './Input';
 import ValidationError from '../utils/ValidationError';
 import { ACTION_ID_COLUMN_NAME, EMAIL_COLUMN_NAME } from '../config';
 
@@ -38,25 +41,31 @@ class EnterIdSingle extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Email:
-          <input
-            type="email"
-            value={this.state.email}
-            onChange={this.handleChange('email')}
-            required
-          />
-        </label>
-        <label>
-          Action ID:
-          <input
-            type="text"
-            value={this.state.id}
-            onChange={this.handleChange('id')}
-            required
-          />
-        </label>
-        <button type="submit">Submit</button>
+        <p>
+          <label>
+            Email:
+            <Input
+              type="email"
+              value={this.state.email}
+              onChange={this.handleChange('email')}
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Action ID:
+            <Input
+              type="text"
+              value={this.state.id}
+              onChange={this.handleChange('id')}
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <Button type="submit">Submit</Button>
+        </p>
       </form>
     );
   }
