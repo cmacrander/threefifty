@@ -24,9 +24,10 @@ const writeRecords = async records => {
   const inserted = [];
   const updated = [];
   for (const r of records) {
-    const key = r[STRIPPED_EMAIL_COLUMN_NAME];
+    const key = r[ACTION_ID_COLUMN_NAME];
     if (key in dbData) {
-      if (dbData[key][ACTION_ID_COLUMN_NAME] !== r[ACTION_ID_COLUMN_NAME]) {
+      const existingValue = dbData[key][STRIPPED_EMAIL_COLUMN_NAME];
+      if (existingValue !== r[STRIPPED_EMAIL_COLUMN_NAME]) {
         updated.push(r);
       } // else data is a perfect match, don't report
     } else {
