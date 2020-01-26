@@ -132,8 +132,8 @@ export default class AddToFile extends Component<Props> {
         <p>
           Open a spreadsheet workbook, and this tool will attempt to add a
           column of either emails or action IDs to the data on the first sheet,
-          depending on what's missing. The resulting table will be saved in a
-          new sheet.
+          depending on what&rsquo;s missing. The resulting table will be saved
+          in a new sheet.
         </p>
         <p>
           Selected file:{' '}
