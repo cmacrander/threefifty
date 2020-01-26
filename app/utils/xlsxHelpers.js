@@ -11,6 +11,8 @@ export const getColumns = sheet => {
 };
 
 export const getTableColumnNames = sheet => {
+  // Doesn't work on workbooks created by Numbers b/c it does weird things
+  // with table names, like save them in an invisible first column.
   const letters = getColumns(sheet);
   const cols = letters.map(l => {
     const address = `${l}1`;

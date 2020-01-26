@@ -38,8 +38,10 @@ export default class AddToFile extends Component<Props> {
 
     this.setState({ warnings: [], success: '' });
     const jsonData = readJsonFromFile(selectedFilePath, 0); // assumes first sheet
-    const cols = Object.keys(jsonData[0]);
-    const { emailColumnName, idColumnName } = getMatchingColumnNames(cols);
+    const originalCols = Object.keys(jsonData[0]);
+    const { emailColumnName, idColumnName } = getMatchingColumnNames(
+      originalCols,
+    );
 
     if (idColumnName && emailColumnName) {
       this.setState({
@@ -73,8 +75,6 @@ export default class AddToFile extends Component<Props> {
     );
 
     const workbook = xlsx.readFile(selectedFilePath);
-    const originalSheet = sheetByIndex(workbook, 0);
-    const originalCols = getTableColumnNames(originalSheet);
     const newSheet = xlsx.utils.json_to_sheet(newJsonData, {
       header: originalCols.concat(dbTargetField),
     });
