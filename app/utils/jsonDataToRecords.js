@@ -12,7 +12,11 @@ const jsonDataToRecords = jsonData => {
   const { emailColumnName, idColumnName } = getMatchingColumnNames(cols);
 
   if (!emailColumnName || !idColumnName) {
-    throw ValidationError('Could not find both email and action ID columns.');
+    throw new ValidationError(
+      `Could not find both email and action ID columns: ${JSON.stringify(
+        jsonData,
+      )}`,
+    );
   }
 
   return jsonData
