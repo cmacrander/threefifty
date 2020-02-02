@@ -2,11 +2,20 @@
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
 import type { HashHistory } from 'history';
-import counter from './counter';
+
+import { submitPasswordType } from '../actions/auth';
+import createReducer from './createReducer';
 
 export default function createRootReducer(history: HashHistory) {
   return combineReducers<{}, *>({
     router: connectRouter(history),
-    counter
+    auth: createReducer(
+      {},
+      {
+        [submitPasswordType]: (state, action) => ({
+          password: action.password,
+        }),
+      },
+    ),
   });
 }
