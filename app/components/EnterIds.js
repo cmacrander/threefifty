@@ -1,20 +1,13 @@
 // @flow
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import Button from './Button';
-import routes from '../routes';
 import EnterIdsFile from './EnterIdsFile';
 import EnterIdsPaste from './EnterIdsPaste';
 import EnterIdSingle from './EnterIdSingle';
 import db from '../services/db';
 import jsonDataToRecords from '../utils/jsonDataToRecords';
-import ValidationError from '../utils/ValidationError';
-import {
-  ACTION_ID_COLUMN_NAME,
-  EMAIL_COLUMN_NAME,
-  STRIPPED_EMAIL_COLUMN_NAME,
-} from '../config';
+import { ACTION_ID_COLUMN_NAME, STRIPPED_EMAIL_COLUMN_NAME } from '../config';
 
 import { Tabs, TabTitle, TabContent } from './Tabs';
 
@@ -39,10 +32,8 @@ const writeRecords = async records => {
 
     dbData[key] = r;
   }
-  console.log('dbData', dbData);
   await db.writeAll(dbData);
   const numRecordsTotal = await db.count();
-  console.log('numRecordsTotal', numRecordsTotal);
 
   return { inserted, updated, numRecordsTotal };
 };
@@ -64,9 +55,7 @@ export default class EnterIds extends React.Component<Props> {
   }
 
   async componentDidMount() {
-    console.log('cdm');
     const numRecordsTotal = await db.count();
-    console.log('numRecordsTotal', numRecordsTotal);
     this.setState({ numRecordsTotal });
   }
 
