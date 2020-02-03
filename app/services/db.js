@@ -1,4 +1,7 @@
 import values from 'lodash/values';
+import password from './password';
+
+const Cryptr = require('cryptr');
 
 const db = {
   async clear() {
@@ -16,11 +19,13 @@ const db = {
     const readFile = util.promisify(fs.readFile);
     const writeFile = util.promisify(fs.writeFile);
 
+    const cryptr = new Cryptr(password.get());
+
     const dbPath = this.getPath();
     let dbData;
     try {
-      const dbJson = await readFile(dbPath);
-      dbData = JSON.parse(dbJson);
+      const encryptedData = await readFile(dbPath);
+      dbData = JSON.parse(cryptr.decrypt(encryptedData));
     } catch (error) {
       // db didn't exist, creating...
       dbData = {};
@@ -48,8 +53,9 @@ const db = {
     const util = require('util');
     const writeFile = util.promisify(fs.writeFile);
 
-    console.log('writeAll()', JSON.stringify(dbData, null, '  '));
-    return writeFile(this.getPath(), JSON.stringify(dbData, null, '  '));
+    const cryptr = new Cryptr(password.get());
+    const encryptedData = cryptr.encrypt(JSON.stringify(dbData));
+    return writeFile(this.getPath(), encryptedData);
   },
 };
 
