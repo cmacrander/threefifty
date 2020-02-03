@@ -7,6 +7,7 @@ import AddToFile from './containers/AddToFile';
 import App from './containers/App';
 import EnterIds from './containers/EnterIds';
 import HomePage from './containers/HomePage';
+import password from './services/password';
 import routes from './routes';
 
 const NavBar = styled.div`
@@ -18,10 +19,18 @@ export default () => (
     <NavBar>
       <Link to={routes.toHome()}>Home</Link>
     </NavBar>
-    <Switch>
-      <Route path={routes.toHome()} component={HomePage} exact />
-      <Route path={routes.toEnterIds()} component={EnterIds} />
-      <Route path={routes.toAddToFile()} component={AddToFile} />
-    </Switch>
+    {password.get() ? (
+      <Switch>
+        <Route path={routes.toHome()} component={HomePage} exact />
+        <Route path={routes.toEnterIds()} component={EnterIds} />
+        <Route path={routes.toAddToFile()} component={AddToFile} />
+      </Switch>
+    ) : (
+      <>
+        {/* This is totally wrong b/c the password is not connected to React in
+      any way; I'm not using props, or state, or redux. */}
+        <Route path={'/'} component={HomePage} />
+      </>
+    )}
   </App>
 );

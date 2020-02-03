@@ -7,6 +7,9 @@ import { submitPasswordAction } from '../actions/auth';
 import bindActions from '../utils/bindActions';
 import routes from '../routes';
 
+import Button from './Button';
+import Input from './Input';
+
 type Props = {};
 
 class Home extends Component<Props> {
@@ -14,7 +17,6 @@ class Home extends Component<Props> {
 
   constructor(props) {
     super(props);
-
     this.state = { password: '' };
   }
 
@@ -25,41 +27,53 @@ class Home extends Component<Props> {
   handleSubmit = event => {
     event.preventDefault();
 
-    this.props.submitPasswordAction(this.state.password);
+    const { submitPasswordAction } = this.props;
+    const { password } = this.state;
+
+    submitPasswordAction(password);
   };
 
   render() {
+    const { pwd, passwordInput } = this.state;
+
     return (
       <div data-tid="container">
         <h1>350 Seattle Utilities</h1>
-        <ul>
-          <li>
-            <Link to={routes.toEnterIds()}>Enter Action IDs</Link>
-          </li>
-          <li>
-            <Link to={routes.toAddToFile()}>Add Action IDs to file</Link>
-          </li>
-        </ul>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Enter password:
-            <input
-              type="password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleChange('password')}
-            />
-          </label>
-          <button type="submit">Submit</button>
-        </form>
-        <p>Your current password is: {this.props.password}</p>
+        {pwd ? (
+          <ul>
+            <li>
+              <Link to={routes.toEnterIds()}>Enter Action IDs</Link>
+            </li>
+            <li>
+              <Link to={routes.toAddToFile()}>Add Action IDs to file</Link>
+            </li>
+          </ul>
+        ) : (
+          <form onSubmit={this.handleSubmit}>
+            <p>
+              Please enter a password to continue, to protect data stored by
+              this app.
+            </p>
+            <p>
+              <Input
+                type="password"
+                value={passwordInput}
+                onChange={this.handleChange('passwordInput')}
+                required
+              />
+            </p>
+            <p>
+              <Button type="submit">Submit</Button>
+            </p>
+          </form>
+        )}
       </div>
     );
   }
 }
 
 export default connect(
-  (state, props) => ({
+  state => ({
     password: state.auth.password,
   }),
   bindActions({ submitPasswordAction }),
