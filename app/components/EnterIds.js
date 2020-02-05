@@ -10,7 +10,7 @@ import Db from '../services/Db';
 import jsonDataToRecords from '../utils/jsonDataToRecords';
 import { ACTION_ID_COLUMN_NAME, STRIPPED_EMAIL_COLUMN_NAME } from '../config';
 
-import { Tabs, TabTitle, TabContent } from './Tabs';
+import { Tabs, TabContent } from './Tabs';
 
 const writeRecords = async (password, records) => {
   const db = new Db(password);
@@ -103,7 +103,7 @@ class EnterIds extends React.Component<Props> {
 
   onValidationError = error => {
     this.setState({
-      warnings: [String(e)],
+      warnings: [String(error)],
     });
   };
 

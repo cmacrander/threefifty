@@ -1,4 +1,5 @@
-import Db, { PasswordInvalidError } from '../services/Db';
+import Db from '../services/Db';
+import PasswordInvalidError from '../utils/PasswordInvalidError';
 
 export const submitPasswordType = 'AUTH_SUBMIT_PASSWORD';
 export const checkPasswordType = 'AUTH_CHECK_PASSWORD';

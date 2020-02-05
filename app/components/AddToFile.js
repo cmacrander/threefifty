@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import xlsx from 'xlsx';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import Button from './Button';
 import Input from './Input';
@@ -10,10 +9,7 @@ import Db from '../services/Db';
 import getMatchingColumnNames from '../utils/getMatchingColumnNames';
 import openSingleFilePath from '../utils/openSingleFilePath';
 import readJsonFromFile from '../utils/readJsonFromFile';
-import routes from '../routes';
-import ValidationError from '../utils/ValidationError';
 import { ACTION_ID_COLUMN_NAME, EMAIL_COLUMN_NAME } from '../config';
-import { getTableColumnNames, sheetByIndex } from '../utils/xlsxHelpers';
 
 type Props = {};
 

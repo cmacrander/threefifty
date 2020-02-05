@@ -1,6 +1,4 @@
 import React from 'react';
-import csvtojson from 'csvtojson';
-import styled from 'styled-components';
 
 import Button from './Button';
 import Input from './Input';
@@ -39,6 +37,8 @@ class EnterIdSingle extends React.Component {
   };
 
   render() {
+    const { email, id } = this.state;
+
     return (
       <form onSubmit={this.handleSubmit}>
         <p>
@@ -46,7 +46,7 @@ class EnterIdSingle extends React.Component {
             Email:
             <Input
               type="email"
-              value={this.state.email}
+              value={email}
               onChange={this.handleChange('email')}
               required
             />
@@ -57,7 +57,7 @@ class EnterIdSingle extends React.Component {
             Action ID:
             <Input
               type="text"
-              value={this.state.id}
+              value={id}
               onChange={this.handleChange('id')}
               required
             />

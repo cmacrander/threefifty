@@ -1,16 +1,36 @@
 // @flow
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import bindActions from '../utils/bindActions';
-import Db, { PasswordInvalidError } from '../services/Db';
-import routes from '../routes';
+import routes from '../Routes';
 import { checkPasswordAction, resetPasswordAction } from '../actions/auth';
 
 import Button from './Button';
 import InfoBox from './InfoBox';
 import Input from './Input';
+
+const HomeLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50vw;
+`;
+
+const HomeLinkStyled = styled(Link)`
+  box-sizing: border-box;
+  width: 160px;
+  height: 160px;
+  padding: 60px 20px 20px 20px;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px gray;
+`;
 
 type Props = {};
 
@@ -57,14 +77,14 @@ class Home extends Component<Props> {
       <div data-tid="container">
         <h1>350 Seattle Utilities</h1>
         {passwordIsValid ? (
-          <ul>
-            <li>
-              <Link to={routes.toEnterIds()}>Enter Action IDs</Link>
-            </li>
-            <li>
-              <Link to={routes.toAddToFile()}>Add Action IDs to file</Link>
-            </li>
-          </ul>
+          <HomeLinks>
+            <HomeLinkStyled to={routes.toEnterIds()}>
+              Enter Action IDs
+            </HomeLinkStyled>
+            <HomeLinkStyled to={routes.toAddToFile()}>
+              Add Action IDs to file
+            </HomeLinkStyled>
+          </HomeLinks>
         ) : (
           <>
             <form onSubmit={this.handlePasswordSubmit}>

@@ -25,8 +25,9 @@ class EnterIdsFile extends React.Component {
     return (
       <>
         <p>
-          The first sheet of the file should have a column called "email", or a
-          column called "action ID", or both. Capitalization doesn't matter.
+          The first sheet of the file should have a column called
+          &ldquo;email&rdquo;, or a column called &ldquo;action ID&rdquo;, or
+          both. Capitalization doesn&rsquo;t matter.
         </p>
         <Button onClick={this.openAndInsert}>Open File</Button>
       </>

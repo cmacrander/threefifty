@@ -38,13 +38,16 @@ class EnterIdsPaste extends React.Component {
   };
 
   render() {
+    const { value } = this.state;
+
     return (
       <form onSubmit={this.handleSubmit}>
         <p>
-          Include column names when pasting. They may be either "email", "action
-          ID", or both. Capitalization doesn't matter.
+          Include column names when pasting. They may be either
+          &ldquo;email&rdquo;, &ldquo;action ID&rdquo;, or both. Capitalization
+          doesn&rsquo;t matter.
         </p>
-        <TextAreaStyled value={this.state.value} onChange={this.handleChange} />
+        <TextAreaStyled value={value} onChange={this.handleChange} />
         <p>
           <Button type="submit">Submit</Button>
         </p>

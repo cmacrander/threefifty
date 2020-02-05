@@ -1,15 +1,7 @@
 import values from 'lodash/values';
-import password from './password';
+import PasswordInvalidError from '../utils/PasswordInvalidError';
 
 const Cryptr = require('cryptr');
-
-export class PasswordInvalidError extends Error {
-  constructor(message = '') {
-    super(message);
-    this.message = message;
-    this.name = 'PasswordInvalidError';
-  }
-}
 
 class Db {
   constructor(password) {
@@ -57,13 +49,13 @@ class Db {
     return values(dbData).find(obj => obj[key] === value);
   }
 
-  getPath() {
+  getPath = () => {
     const {
       remote: { app },
     } = require('electron');
     const { join } = require('path');
     return join(app.getPath('userData'), 'actionID.json');
-  }
+  };
 
   async writeAll(dbData) {
     const fs = require('fs');
