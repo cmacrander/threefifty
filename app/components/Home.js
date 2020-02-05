@@ -9,6 +9,7 @@ import routes from '../routes';
 import { checkPasswordAction, resetPasswordAction } from '../actions/auth';
 
 import Button from './Button';
+import InfoBox from './InfoBox';
 import Input from './Input';
 
 type Props = {};
