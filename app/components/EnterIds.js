@@ -1,17 +1,20 @@
 // @flow
 import React from 'react';
+import { connect } from 'react-redux';
 
 import Button from './Button';
 import EnterIdsFile from './EnterIdsFile';
 import EnterIdsPaste from './EnterIdsPaste';
 import EnterIdSingle from './EnterIdSingle';
-import db from '../services/db';
+import Db from '../services/Db';
 import jsonDataToRecords from '../utils/jsonDataToRecords';
 import { ACTION_ID_COLUMN_NAME, STRIPPED_EMAIL_COLUMN_NAME } from '../config';
 
 import { Tabs, TabTitle, TabContent } from './Tabs';
 
-const writeRecords = async records => {
+const writeRecords = async (password, records) => {
+  const db = new Db(password);
+
   const dbData = await db.getAll();
 
   const inserted = [];
@@ -40,7 +43,7 @@ const writeRecords = async records => {
 
 type Props = {};
 
-export default class EnterIds extends React.Component<Props> {
+class EnterIds extends React.Component<Props> {
   props: Props;
 
   constructor(props) {
@@ -55,11 +58,17 @@ export default class EnterIds extends React.Component<Props> {
   }
 
   async componentDidMount() {
+    const { password } = this.props;
+    const db = new Db(password);
+
     const numRecordsTotal = await db.count();
     this.setState({ numRecordsTotal });
   }
 
   clearDatabase = async () => {
+    const { password } = this.props;
+    const db = new Db(password);
+
     const { numRecordsTotal } = this.state;
     const msg =
       `Are you sure you want to delete all ${numRecordsTotal} records in the ` +
@@ -79,8 +88,12 @@ export default class EnterIds extends React.Component<Props> {
     });
 
   insertJsonData = async jsonData => {
+    const { password } = this.props;
     const records = jsonDataToRecords(jsonData);
-    const { inserted, updated, numRecordsTotal } = await writeRecords(records);
+    const { inserted, updated, numRecordsTotal } = await writeRecords(
+      password,
+      records,
+    );
     this.setState({
       numRecordsInserted: inserted.length,
       numRecordsUpdated: updated.length,
@@ -148,3 +161,7 @@ export default class EnterIds extends React.Component<Props> {
     );
   }
 }
+
+const mapStateToProps = state => ({ password: state.auth.password });
+
+export default connect(mapStateToProps)(EnterIds);

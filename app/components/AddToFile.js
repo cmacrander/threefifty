@@ -1,11 +1,12 @@
 // @flow
 import React, { Component } from 'react';
 import xlsx from 'xlsx';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import Button from './Button';
 import Input from './Input';
-import db from '../services/db';
+import Db from '../services/Db';
 import getMatchingColumnNames from '../utils/getMatchingColumnNames';
 import openSingleFilePath from '../utils/openSingleFilePath';
 import readJsonFromFile from '../utils/readJsonFromFile';
@@ -16,7 +17,7 @@ import { getTableColumnNames, sheetByIndex } from '../utils/xlsxHelpers';
 
 type Props = {};
 
-export default class AddToFile extends Component<Props> {
+class AddToFile extends Component<Props> {
   props: Props;
 
   constructor(props) {
@@ -102,6 +103,9 @@ export default class AddToFile extends Component<Props> {
   };
 
   addData = async (jsonData, dataSourceField, dbSourceField, dbTargetField) => {
+    const { password } = this.props;
+    const db = new Db(password);
+
     const inserted = [];
     for (const obj of jsonData) {
       const sourceValue = obj[dataSourceField];
@@ -164,3 +168,7 @@ export default class AddToFile extends Component<Props> {
     );
   }
 }
+
+const mapStateToProps = state => ({ password: state.auth.password });
+
+export default connect(mapStateToProps)(AddToFile);
