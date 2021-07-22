@@ -260,7 +260,7 @@
     "redux-thunk": "^2.3.0",
     "source-map-support": "^0.5.16",
     "styled-components": "^5.0.0",
-    "xlsx": "^0.15.4"
+    "xlsx": "^0.17.0"
   },
   "devEngines": {
     "node": ">=7.x",
